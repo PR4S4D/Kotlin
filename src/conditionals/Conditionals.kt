@@ -1,7 +1,7 @@
 package conditionals
 
 fun main(args: Array<String>) {
-    val age: Int = 20
+    val age: Int = 2
     if (age < 18) {
         println("you cannot register")
     } else if (age < 21) {
@@ -17,5 +17,18 @@ fun main(args: Array<String>) {
             println("mode is 2")
         }
         3 -> println("mode is 3")
+        else -> println("mode is not set correctly")
     }
+
+    val result = when(mode){
+        1 -> " mode is 1"
+        2 -> {
+            println("mode is 2")
+            2
+        }
+        3 -> println("mode is 3")
+        else -> println("mode is not set correctly")
+    }
+
+    println("Result is $result")
 }
