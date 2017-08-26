@@ -20,7 +20,7 @@ fun main(args: Array<String>) {
         else -> println("mode is not set correctly")
     }
 
-    val result = when(mode){
+    val result = when (mode) {
         1 -> " mode is 1"
         2 -> {
             println("mode is 2")
@@ -31,4 +31,13 @@ fun main(args: Array<String>) {
     }
 
     println("Result is $result")
+
+    // Advanced
+    val x = 7
+    when (x) {
+        3 * 3 -> println("x is 9")
+        "String".length -> println("x is 6")
+        in 1..10 -> println("x is in 1-10")
+    //break is implicit in Kotlin 
+    }
 }
